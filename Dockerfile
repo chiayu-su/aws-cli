@@ -25,6 +25,7 @@ RUN apk add --update --no-cache -t \
       less \
       mailcap \
       bash \
+      build-base \
     && pip install --upgrade pip \
     && pip install --no-cache-dir awscli==$AWS_CLI_VERSION \
     && apk del py-pip \
